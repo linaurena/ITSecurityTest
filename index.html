@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+    </style>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Security Test</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 id="title">Security test</h1>
+    <form action="">
+        <fieldset class="fieldset">
+            <section>
+                <div>
+                    <legend>Pregunta 1 </legend> 
+                    <span class="first-box-score score"></span>
+                    <span class="second-box-score score"></span>
+                    <button class="pista">Pista</button>
+                </div>
+                <p id="droppable_1" class="question"><span>La seguridad de la información</span> proporciona:</p>
+            </section>
+            <ul>
+                <li id="draggable_opt1" class="ui-widget-content">
+                    <label for="opt_1a">a</label>
+                    <input type="button" value="Confidencialidad" id="opt_1a" class="option">
+                </li>
+                <li id="draggable_opt2" class="ui-widget-content">
+                    <label for="opt_1b">b</label>
+                    <input type="button" value="Acreditación" id="opt_1b" class="option">
+                </li>
+                <li id="draggable_opt3" class="ui-widget-content">
+                    <label for="opt_1c">c</label>
+                    <input type="button" value="Integridad" id="opt_1c" class="option">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="fieldset">
+            <section>
+                <div>
+                    <legend>Pregunta 2</legend>
+                    <span class="third-box-score score"></span>
+                    <span class="fourth-box-score score"></span>
+                    <button class="pista">Pista</button>
+                </div>
+                <p id="droppable_2" class="question"><span>Las vulnerabilidades</span> pueden ser por:</p>
+            </section>
+            <ul>
+                <li id="draggable_opt4" class="ui-widget-content">
+                    <label for="opt_2a">a</label>
+                    <input type="button" value="Procesos" id="opt_2a" class="option">
+                </li>
+                <li id="draggable_opt5" class="ui-widget-content">
+                    <label for="opt_2b">b</label>
+                    <input type="button" value="Personas" id="opt_2b" class="option">
+                </li>
+                <li id="draggable_opt6" class="ui-widget-content">
+                    <label for="opt_2c">c</label>
+                    <input type="button" value="Sistemas" id="opt_2c" class="option">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <h2>¡Muy bien!</h2>
+            <p> Sigue avanzando</p>
+            <button class="close">Continuar</button>    
+        </div>
+    </div>
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <h2>¡Fallaste!</h2>
+            <p> Sigue avanzando</p>
+            <button class="close">Continuar</button>    
+        </div>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

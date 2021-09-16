@@ -1,0 +1,117 @@
+$yellow: #E3E829;
+$lightblue: #00ADC6;
+$darkblue: #0033A0;
+$greybg: #EBEFF0;
+$bigfont: 2rem;
+$mediumfont: 1.5rem;
+$smallfont: 1rem;
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    font-size: $bigfont;
+    text-align: center;
+    //padding: 1rem 0rem;
+    padding: 1vh 0vh;
+    background: $darkblue;
+    color: white;
+    z-index: 1;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    //padding: 3rem;
+    padding-top: 10vh;
+    border: 0;
+    justify-content: space-between;
+    section{
+        height: 40vh;
+        div{
+            display: inline-flex;
+            legend{
+                padding: 2rem 1rem 0.5rem 1.5rem;
+            }
+            .score{
+                margin-top: 2.25rem;
+                width: 14px;
+                height: 14px;
+                margin-right: 5px;
+                border-radius: 2px;
+                border: 1px solid $darkblue;
+                color: white;
+                justify-content: stretch;
+            }
+            .pista{
+                background: none;
+                border: none;
+                margin: 1.5rem 0rem 0rem 5.5rem;
+                font-size: $smallfont;
+            }
+        }
+        p{
+            background: $yellow;
+            color: $darkblue;
+            margin: 1rem 1.5rem 0rem 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    ul{
+        background-color: $greybg;
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+        height: 50vh;
+        li{
+            list-style: none;
+            margin-bottom: 1rem;
+            label{
+                background: $darkblue;
+                color: white;
+                padding: 0.5rem 0.75rem;
+                border-radius: 50%;
+            }
+            input{
+                padding: 1rem;
+                margin-left: 1rem;
+                background: $lightblue;
+                border: none;
+                border-radius: 8px;
+                color: white;
+                font-weight: bold;
+                width: 70%;
+                text-align: left;
+            }
+        }
+    }
+}
+.popup-overlay {
+    visibility:hidden;
+}
+.popup-content {
+    visibility:hidden;
+}
+.popup-overlay.active{
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+    visibility:visible;
+}
+.popup-content.active {
+    visibility:visible;
+}
