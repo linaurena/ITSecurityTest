@@ -1,0 +1,137 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1vh 0vh;
+  background: #0033A0;
+  color: white;
+  z-index: 1;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding-top: 10vh;
+  border: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+fieldset section {
+  height: 40vh;
+}
+
+fieldset section div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+fieldset section div legend {
+  padding: 2rem 1rem 0.5rem 1.5rem;
+}
+
+fieldset section div .score {
+  margin-top: 2.25rem;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  border-radius: 2px;
+  border: 1px solid #0033A0;
+  color: white;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+fieldset section div .pista {
+  background: none;
+  border: none;
+  margin: 1.5rem 0rem 0rem 5.5rem;
+  font-size: 1rem;
+}
+
+fieldset section p {
+  background: #E3E829;
+  color: #0033A0;
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+fieldset section p span {
+  font-weight: bold;
+}
+
+fieldset ul {
+  background-color: #EBEFF0;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  height: 50vh;
+}
+
+fieldset ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+fieldset ul li label {
+  background: #0033A0;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+}
+
+fieldset ul li input {
+  padding: 1rem;
+  margin-left: 1rem;
+  background: #00ADC6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  width: 70%;
+  text-align: left;
+}
+
+.popup-overlay {
+  visibility: hidden;
+}
+
+.popup-content {
+  visibility: hidden;
+}
+
+.popup-overlay.active {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+  visibility: visible;
+}
+
+.popup-content.active {
+  visibility: visible;
+}
+/*# sourceMappingURL=styles.css.map */
